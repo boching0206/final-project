@@ -156,3 +156,20 @@ function addToCart(productName, productPrice, quantity) {
     console.log('購物車內容:', cart);
     alert(`您已將 ${item.quantity} 件 ${productName} (${productPrice}) 加入購物車。`);
 }
+// 獲取 form 和 messageInput 元素
+const messageForm = document.getElementById('messageForm');
+const messageInput = document.getElementById('messageInput');
+
+// 監聽表單提交事件
+messageForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // 防止表單默認提交行為
+
+    // 獲取用戶輸入的留言內容
+    const message = messageInput.value.trim();
+
+    // 如果留言不為空,則顯示成功提交訊息
+    if (message !== '') {
+        alert('您已成功提交留言!');
+        messageInput.value = ''; // 清空留言輸入框
+    }
+});
