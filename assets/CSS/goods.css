@@ -1,20 +1,23 @@
-/* 重設樣式和通用樣式 */
-body {
-  font-family: Arial, sans-serif;
+/* 重設樣式 */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
 }
 
 /* 標題和導覽列 */
 header {
   background-color: #333;
   color: white;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -22,16 +25,13 @@ nav {
 .logo a {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 nav a {
@@ -40,14 +40,8 @@ nav a {
   padding: 2rem;
 }
 
-.search-bar {
-  display: flex;
-  margin-top: 1rem;
-}
-
 .search-bar input {
   padding: 0.5rem;
-  flex-grow: 1;
 }
 
 .search-bar button {
