@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>麻將桌詳情 - 麻將天地</title>
     <link rel="stylesheet" href="..\assets\CSS\mahjong-detail.css">
-    <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <a href="index.html">麻將天地</a>
-                </div>
-                <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="goods.html">產品</a></li>
-                    <li><a href="cart.html">購物車</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li id="member-link"><a href="login.html">會員</a></li>
-                </ul>
-                <div class="search-bar">
-                    <input type="text" placeholder="搜尋產品...">
-                    <button>搜尋</button>
-                </div>
-            </nav>
-        </header>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">麻將天地</a>
+            </div>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="goods.html">產品</a></li>
+                <li><a href="cart.html">購物車</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="user.html">會員中心</a></li>
+                <li id="member-link"><a href="login.html">會員</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="搜尋產品...">
+                <button>搜尋</button>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <section class="product-detail">
@@ -47,11 +50,42 @@
             </div>
         </section>
     </main>
+    <section class="product-reviews">
+        <h3 style="margin-bottom: 0px;">顧客留言</h3>
+        <div id="messages"></div>
+        <div class="rating">
+            <input type="radio" name="star" id="star1" value="5">
+            <label for="star1"></label>
+            <input type="radio" name="star" id="star2" value="4">
+            <label for="star2"></label>
+            <input type="radio" name="star" id="star3" value="3">
+            <label for="star3"></label>
+            <input type="radio" name="star" id="star4" value="2">
+            <label for="star4"></label>
+            <input type="radio" name="star" id="star5" value="1">
+            <label for="star5"></label>
+        </div>
+        <form id="messageForm">
+            <textarea id="messageInput" placeholder="在這裡寫下您的留言..." required></textarea>
+            <button type="submit">提交留言</button>
+        </form>
+        <hr>
+        <h3>買家評價</h3>
+        <p class="cmt">陳O明 2024/06/10</p>
+        <span class="full_star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+        <p class="cmt">物超所值</p>
+        <hr>
+        <p class="cmt">王O豪 2024/06/12</p>
+        <span class="full_star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+        <p class="cmt">賣家好評</p>
+    </section>
 
     <footer>
         <p>&copy; 2024 麻將天地</p>
     </footer>
 
     <script src="..\assets\JS\mahjong-accessories-detail.js"></script>
+    <script src="../assets/JS/star.js"></script>
 </body>
+
 </html>
