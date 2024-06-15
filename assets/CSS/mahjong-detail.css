@@ -1,52 +1,56 @@
-/* 樣式重置和通用樣式 */
-body {
-    font-family: Arial, sans-serif;
+/* 重設樣式 */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-/* 標題和導覽列 */
-header {
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 標題和導覽列 */
+  header {
     background-color: #333;
     color: white;
     padding: 2rem;
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo a {
+  }
+  
+  .logo a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style-type: none;
     display: flex;
-}
-
-nav a {
+  }
+  
+  nav a {
     color: white;
     text-decoration: none;
-    padding: 1rem;
-}
-
-.search-bar input {
+    padding: 2rem;
+  }
+  
+  .search-bar input {
     padding: 0.5rem;
-}
-
-.search-bar button {
+  }
+  
+  .search-bar button {
     padding: 0.5rem 1rem;
     background-color: #666;
     color: white;
     border: none;
     cursor: pointer;
-}
+  }
 
 .product-detail {
     display: flex;
@@ -118,11 +122,11 @@ footer {
 .product-reviews {
     margin-top: 20px;
     border-top: 1px solid #ccc;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 #messages {
-    margin-bottom: 20px;
+    margin-bottom: 10px 30px;
 }
 
 #messageInput {
@@ -216,4 +220,54 @@ button:hover {
 /* 大型設備 */
 @media (min-width: 993px) {
     /* 保持原有樣式 */
+}
+
+.cmt{
+    margin: 5px;
+    font-size: 16px;
+}
+
+.full_star{
+    color:yellow;
+    font-size: 30px;
+}
+.rating{
+    width: 50%;
+    position: relative;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: flex-end;
+}
+.rating input{
+    display: none;
+    letter-spacing: 2%;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+}
+.rating label:before{
+    content: '★';
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: gray;
+    z-index: 1;
+}
+.rating label:after{
+    content: '★';
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: yellow;
+    opacity: 0;
+    transition: .3s;
+    text-shadow: 0;
+    z-index: 2;
+}
+
+.rating label:hover:after,
+.rating label:hover~label:after,
+.rating input:checked~label:after{
+    opacity: 1;
 }
