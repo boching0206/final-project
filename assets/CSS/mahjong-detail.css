@@ -1,0 +1,219 @@
+/* 樣式重置和通用樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 標題和導覽列 */
+header {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-img {
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.product-thumbnails {
+    display: flex;
+    overflow-x: auto;
+}
+
+.product-thumbnail {
+    max-width: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+.product-actions {
+    margin-top: 20px;
+}
+
+.quantity {
+    width: 60px;
+}
+
+/* 產品類別按鈕樣式 */
+.product-categories {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-buttons {
+    margin-top: 10px;
+}
+
+.category-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* 頁尾樣式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-reviews {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+#messages {
+    margin-bottom: 20px;
+}
+
+#messageInput {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box; /* 確保padding不會改變元素的總寬度 */
+}
+
+button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #003082;
+}
+
+/* 適用於手機等小型裝置 */
+@media (max-width: 767px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 115%;
+      }
+
+    nav ul li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .search-bar input {
+        width: 100%;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+
+    .search-bar button {
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .product-detail {
+        flex-direction: column;
+    }
+}
+
+/* 中型設備 */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+}
+
+/* 大型設備 */
+@media (min-width: 993px) {
+    /* 保持原有樣式 */
+}

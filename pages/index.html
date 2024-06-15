@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻將天地</title>
+    <link rel="stylesheet" href="..\assets\CSS\index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">麻將天地</a>
+            </div>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="goods.html">產品</a></li>
+                <li><a href="cart.html">購物車</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li id="member-link"><a href="login.html">會員</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="搜尋產品...">
+                <button>搜尋</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- 動態廣告頁面 -->
+        <section class="advertise">
+            <div class="carousel-container">
+                <div class="carousel">
+                  <div class="slide">
+                    <a href="goods.html"><img src="..\assets\image\ad1.jpg" alt="Image 1"></a>
+                  </div>
+                  <div class="slide">
+                    <a href="mahjong-tiles.html"><img src="..\assets\image\ad2.jpg" alt="Image 2"></a>
+                  </div>
+                  <div class="slide">
+                    <a href="goods.html"><img src="..\assets\image\ad3.jpg" alt="Image 3"></a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <input type="radio" name="slide" id="radio1" checked>
+                <label for="radio1"></label>
+                <input type="radio" name="slide" id="radio2">
+                <label for="radio2"></label>
+                <input type="radio" name="slide" id="radio3">
+                <label for="radio3"></label>
+              </div>
+        </section>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>探索麻將的無窮魅力</h1>
+                <p>在這裡，您可以找到各式各樣的麻將相關產品，讓您的麻將之旅更加精彩。</p>
+                <a href="goods.html" class="btn">立即購買</a>
+            </div>
+        </section>
+        <section class="featured-products">
+            <h2>精選產品</h2>
+            <ul class="product-list">
+                <div class="product-item" data-product="M6ⅡS極薄過山車-餐桌款">
+                    <img src="..\assets/image/mahjong-tables-7.jpg" alt="M6ⅡS極薄過山車-餐桌款" class="product-thumbnail">
+                    <h3 class="product-name">M6ⅡS極薄過山車-餐桌款</h3>
+                    <p class="product-price">$ 35,800</p>
+                    <button class="add-to-cart">加入購物車</button>
+                </div>
+                <div class="product-item" data-product="M3ⅡS極薄過山車-含椅組合">
+                    <img src="..\assets/image/mahjong-tables-8.jpg" alt="M3ⅡS極薄過山車-含椅組合" class="product-thumbnail">
+                    <h3 class="product-name">M3ⅡS極薄過山車-含椅組合</h3>
+                    <p class="product-price">$ 42,800</p>
+                    <button class="add-to-cart">加入購物車</button>
+                </div>
+                <div class="product-item" data-product="M3ⅡS極薄過山車-折疊款">
+                    <img src="..\assets/image/mahjong-tables-9.jpg" alt="M3ⅡS極薄過山車-折疊款" class="product-thumbnail">
+                    <h3 class="product-name">M3ⅡS極薄過山車-折疊款</h3>
+                    <p class="product-price">$ 32,800</p>
+                    <button class="add-to-cart">加入購物車</button>
+                </div>
+            </ul>
+        </section>
+        <div id="mapContainer">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14469.068146818874!2d121.2435522!3d24.9570277!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346822143c046009%3A0x63e3ef21e3beebac!2z6LOH6KiK566h55CG5a2457O7!5e0!3m2!1szh-TW!2stw!4v1703420605009!5m2!1szh-TW!2stw"
+                width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 麻將天地</p>
+    </footer>
+
+    <script src="..\assets\JS\index.js"></script>
+</body>
+
+</html>

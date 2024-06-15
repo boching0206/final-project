@@ -1,0 +1,347 @@
+/* 重設樣式 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 標題和導覽列 */
+header {
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #666;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-thumbnail {
+  max-width: 100px;
+  cursor: pointer;
+  /* 設置游標樣式為「抓取」 */
+}
+
+
+/* 主要內容區 */
+main {
+  padding: 2rem;
+}
+
+/*輪播圖*/
+
+.carousel-container {
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* 漸變效果 */
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 80%;
+}
+
+/* 動態廣告頁面 */
+.advertise {
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  /* 對齊父容器垂直中線 */
+}
+
+.carousel-controls label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #999;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  /* 鼠標放在botton上的樣式變動(表示可點擊) */
+  transition: background-color 0.3s ease-in-out;
+  /* 漸變效果 */
+}
+
+
+.carousel-controls input:checked+label {
+  background-color: #d9d9d9;
+}
+
+.carousel-controls input {
+  display: none;
+}
+
+.hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.featured-products {
+  margin-top: 4rem;
+}
+
+.product-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 產品項目樣式 */
+.product-item {
+  width: 30%;
+  /* 調整為三欄佈局 */
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* 添加陰影效果 */
+}
+
+.product-item img {
+  max-width: 80%;
+  height: 80%;
+}
+
+.price {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* 添加過渡效果 */
+}
+
+.add-to-cart:hover {
+  background-color: #666;
+  /* 更改按鈕hover時的背景色 */
+}
+
+/* 頁尾 */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* 地圖樣式 */
+.map {
+  text-align: center;
+  height: 100%;
+  width: 120%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* 適用於手機等小型裝置 */
+@media (max-width: 767px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .search-bar button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .product-item {
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-controls {
+    bottom: 10px;
+  }
+}
+
+/* 適用於平板電腦和中型裝置 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .search-bar button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .product-item {
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-controls {
+    bottom: 20px;
+  }
+}
+
+/* 適用於桌機和大型裝置 */
+@media (min-width: 992px) {
+  .product-item {
+    width: 30%;
+  }
+}

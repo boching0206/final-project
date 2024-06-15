@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻將桌詳情 - 麻將天地</title>
+    <link rel="stylesheet" href="..\assets\CSS\mahjong-detail.css">
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">麻將天地</a>
+            </div>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="goods.html">產品</a></li>
+                <li><a href="cart.html">購物車</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li id="member-link"><a href="login.html">會員</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="搜尋產品...">
+                <button>搜尋</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="product-images">
+                <img src="" alt="主要產品圖片" class="main-img">
+                <div class="product-thumbnails"></div>
+            </div>
+
+            <div class="product-info">
+                <h2 class="product-name"></h2>
+                <p class="product-price"></p>
+                <div class="product-rating">
+                    <span class="rating-stars"></span>
+                    <span class="rating-count"></span>
+                </div>
+                <div class="product-description"></div>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" class="quantity">
+                    <button class="add-to-cart">加入購物車</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="product-reviews">
+        <h3>顧客留言</h3>
+        <div id="messages"></div>
+        <form id="messageForm">
+            <textarea id="messageInput" placeholder="在這裡寫下您的留言..." required></textarea>
+            <button type="submit">提交留言</button>
+        </form>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 麻將天地</p>
+    </footer>
+
+    <script src="..\assets\JS\mahjong-table-detail.js"></script>
+</body>
+
+</html>

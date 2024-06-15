@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 - 麻將天地</title>
+    <link rel="stylesheet" href="..\assets\CSS\cart.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">麻將天地</a>
+            </div>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="goods.html">產品</a></li>
+                <li><a href="cart.html">購物車</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li id="member-link"><a href="login.html">會員</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="搜尋產品...">
+                <button>搜尋</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="app">
+            <div class="container">
+                <div class="item_header">
+                    <div class="item_detail">商品</div>
+                    <div class="price">單價</div>
+                    <div class="count">數量</div>
+                    <div class="amount">總計</div>
+                    <div class="operate">操作</div>
+                </div>
+                <div class="item_body">
+                    <div class="item_detail">
+                        <img src="..\assets/image/mahjong-tables-1.jpg" alt="">
+                        <div class="name">H900-餐桌款</div>
+                    </div>
+
+                    <div class="price"><span>$</span>26,800</div>
+                    <div class="count">
+                        <button>-</button>
+                        1
+                        <button>+</button>
+                    </div>
+                    <div class="amount">300</div>
+                    <div class="operate">
+                        <button>刪除</button>
+                    </div>
+                </div>
+                <div class="item_body">
+                    <div class="item_detail">
+                        <img src="..\assets\image\mahjong-tables-2.jpg" alt="">
+                        <div class="name">R8Ⅱ-極薄餐桌款</div>
+                    </div>
+
+                    <div class="price"><span>$</span>29,800</div>
+                    <div class="count">
+                        <button>-</button>
+                        1
+                        <button>+</button>
+                    </div>
+                    <div class="amount">300</div>
+                    <div class="operate">
+                        <button>刪除</button>
+                    </div>
+                </div>
+            </div>
+            <div class="next-step">
+                <button onclick="goToCheckout()">下一步:付款資訊</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 麻將天地</p>
+    </footer>
+
+
+    <script src="..\assets\JS\cart.js"></script>
+</body>
+
+</html>

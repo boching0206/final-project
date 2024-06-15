@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳 - 麻將天地</title>
+    <link rel="stylesheet" href="../assets/CSS/checkout.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">麻將天地</a>
+            </div>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="goods.html">產品</a></li>
+                <li><a href="cart.html">購物車</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li id="member-link"><a href="login.html">會員</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="搜尋產品...">
+                <button>搜尋</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>結帳</h2>
+            <div class="checkout-form">
+                <div class="customer-info">
+                    <h3>客戶資訊</h3>
+                    <form id="customer-form">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">電子郵件</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">地址</label>
+                            <input type="text" id="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="payment">付款方式</label>
+                            <select id="payment" required>
+                                <option value="">請選擇付款方式</option>
+                                <option value="credit-card">信用卡</option>
+                                <option value="cash-on-delivery">貨到付款</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="cart-items-container">
+                    <h3>購物車產品</h3>
+                    <div class="cart-items-scroll">
+                        <div class="item_header">
+                            <div class="item_detail">商品</div>
+                            <div class="price">單價</div>
+                            <div class="count">數量</div>
+                            <div class="amount">總計</div>
+                        </div>
+                        <div class="item_body">
+                            <div class="item_detail">
+                                <img src="..\assets/image/mahjong-tables-1.jpg" alt="">
+                                <div class="name">H900-餐桌款</div>
+                            </div>
+                            <div class="price"><span>$</span>26,800</div>
+                            <div class="count">1</div>
+                            <div class="price"><span>$</span>26,800</div>
+                        </div>
+                        <div class="item_body">
+                            <div class="item_detail">
+                                <img src="..\assets/image/mahjong-tables-2.jpg" alt="">
+                                <div class="name">R8Ⅱ-極薄餐桌款</div>
+                            </div>
+                            <div class="price"><span>$</span>29,800</div>
+                            <div class="count">2</div>
+                            <div class="price"><span>$</span>59,600</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-amount">
+                <span>總金額:$86,400</span>
+                <span id="total-amount-value"></span>
+            </div>
+            <button id="submit-order">送出訂單</button>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 麻將天地</p>
+    </footer>
+
+    <script src="../assets/JS/checkout.js"></script>
+</body>
+
+</html>

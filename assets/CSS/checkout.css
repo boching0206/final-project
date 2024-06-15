@@ -1,0 +1,103 @@
+/* 導入 cart.css 的樣式 */
+@import 'cart.css';
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.customer-info {
+    margin-bottom: 2rem;
+}
+
+.item_header {
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.item_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+    /* 增加上下內邊距 */
+    border-bottom: 1px solid #ccc;
+}
+
+.item_detail {
+    display: block;
+    text-align: center;
+    width: 30%;
+}
+
+.item_detail img {
+    max-width: 80px;
+    margin-bottom: 0.5rem;
+}
+
+.price,
+.count,
+.amount {
+    width: 25%;
+}
+
+.total-amount {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.total-amount span:first-child {
+    margin-right: 0.5rem;
+}
+
+.cart-items-container {
+    max-height: 300px;
+    overflow: auto;
+    margin-bottom: 1rem; /* 增加商品列表整體與其他元素之間的下外邊距 */
+}
+
+.cart-items-scroll {
+    position: relative;
+}

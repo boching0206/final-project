@@ -1,0 +1,213 @@
+/* 重設樣式和通用樣式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 標題和導覽列 */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+.search-bar {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  flex-grow: 1;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #666;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* 產品網格樣式 */
+.product-grid {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.product-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.product-item img {
+  max-width: 75%;
+  height: 60%;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
+/* 產品類別按鈕樣式 */
+.product-categories {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.category-buttons {
+  margin-top: 0.5rem;
+}
+
+.category-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  margin: 0.25rem;
+}
+
+/* 頁尾樣式 */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* 媒體查詢 */
+@media (max-width: 767px) {
+    header {
+      padding: 1rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      margin-bottom: 1rem;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .search-bar input {
+      width: 100%;
+      padding: 0.25rem;
+      box-sizing: border-box;
+    }
+  
+    .search-bar button {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      width: 20%;
+    }
+ 
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  header {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .search-bar {
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  .search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .search-bar button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 50%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
