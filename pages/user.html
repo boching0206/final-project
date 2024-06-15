@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<title>麻將天地 - 會員中心</title>
+<link rel="stylesheet" href="../assets/CSS/index.css">
+<link rel="stylesheet" href="../assets/CSS/user.css">
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">麻將天地</a>
+      </div>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="goods.html">產品</a></li>
+        <li><a href="cart.html">購物車</a></li>
+        <li><a href="about.html">關於我們</a></li>
+        <li><a href="user.html">會員中心</a></li>
+        <li id="member-link"><a href="login.html">會員</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="搜尋產品...">
+        <button>搜尋</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="user-info">
+      <h2>會員中心</h2>
+      <div class="user-profile">
+        <h3>個人資料</h3>
+        <p>姓名: <span id="user-name"></span></p>
+        <p>電子郵件: <span id="user-email"></span></p>
+        <button id="edit-profile">編輯資料</button>
+      </div>
+      <div class="user-orders">
+        <h3>消費紀錄</h3>
+        <ul id="order-list"></ul>
+      </div>
+      <div class="user-reviews">
+        <h3>評分紀錄</h3>
+        <ul id="review-list"></ul>
+      </div>
+    </section>
+    <!-- 編輯個人資料對話框 -->
+    <div id="edit-profile-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>編輯個人資料</h3>
+        <form id="edit-profile-form">
+          <label for="name">姓名:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">電子郵件:</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">儲存</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 麻將天地</p>
+  </footer>
+
+  <script src="../assets/JS/user.js"></script>
+</body>
+
+</html>
